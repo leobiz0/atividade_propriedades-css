@@ -21,15 +21,27 @@
            </ul>
         </nav>
     </header>
-    
+
     <main>
-        <div>
+        <div class="cascata">
             <h2 id="cascata">Regra da Cascata</h2>
+
+            <p>Define a ordem de prioridade quando há conflito em um mesmo elemento</p>
+
+            <p>Especificidade > aparição</p>
         </div>
-        <div>
+        <div class="especificidade">
             <h2 id="espec">Especificidade</h2>
+
+            <ul>
+                <li><p><strong>ID</strong> - #id (100 pontos)</p></li>
+                <li><p><strong>Classe/Pseudo-classe</strong> - .classe/:hover, :first-child (10 pontos)</p></li>
+                <li><p><strong>Elemento</strong> - p, h1, div (1 ponto)</p></li>
+
+                <p>O maior número total vence.</p>
+            </ul>
         </div>
-        <div>
+        <div class="seletor">
             <h2 id="seletor">Combinação de Seletores</h2>
         </div>
         <div>
@@ -43,6 +55,8 @@
         </div>
         <div>
             <h2 id="box">Box-sizing: border-box</h2>
+
+            <img src="./img/img-box_sizing.png" alt="código demonstrando a utilização da propriedade box-sizing">
         </div>
     </main>
 </body>
