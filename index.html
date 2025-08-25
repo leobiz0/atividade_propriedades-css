@@ -23,10 +23,15 @@
     </header>
 
     <main>
-        <div class="cascata">
+        <section class="conteudos">
+            <div class="cascata">
             <h2 id="cascata">Regra da Cascata</h2>
 
             <p>Define a ordem de prioridade quando há conflito em um mesmo elemento</p>
+
+            <img src="./img/img-cascata.png" alt="código demonstrando a regra da cascata">
+
+            <p>O parágrafo ficára verde, pela ordem de aparição</p>
 
             <p>Especificidade > aparição</p>
         </div>
@@ -38,17 +43,62 @@
                 <li><p><strong>Classe/Pseudo-classe</strong> - .classe/:hover, :first-child (10 pontos)</p></li>
                 <li><p><strong>Elemento</strong> - p, h1, div (1 ponto)</p></li>
 
+                <img src="./img/img-especificidade.png" alt="código demonstrando o uso da especificidade no css">
+
                 <p>O maior número total vence.</p>
             </ul>
         </div>
         <div class="seletor">
             <h2 id="seletor">Combinação de Seletores</h2>
+
+            <ul>
+                <li><p><strong>Espaço</strong> - .classe h1 - Seleciona qualquer h1 dentro de .classe</p></li>
+                <li><p><strong>Filho</strong> - .classe > h1 - Seleciona apenas o h1 que é filho direto de .classe</p></li>
+                <li><p><strong>Soma</strong> - .classe h1+h1 - Seleciona o h1 que vem imediatamente após outro h1 dentro de .classe</p></li>
+            </ul>
+
+            <img src="./img/img-seletores.png" alt="código demonstrando a utilização de seletores no css">
         </div>
-        <div>
+        <div class="pseudo-classes">
             <h2 id="pseudo">Pseudo-Classes</h2>
+
+            <ul>
+                <li><p><strong>:first-child</strong> - Seleciona o primeiro filho de um elemento</p></li>
+                <li><p><strong>:last-child</strong> - Seleciona o último filho de um elemento</p></li>
+                <li><p><strong>:nth-child(n)</strong> - Seleciona o enésimo filho (número)</p></li>
+                <li><p><strong>nth-of-type(n)</strong> - Seleciona a tag (número)</p></li>
+
+                <img src="./img/img-pseudo.png" alt="código demonstrando a utilização de pseudo-classes">
+            </ul>
         </div>
-        <div>
+        <div class="display">
             <h2 id="display">Display Inline e Block</h2>
+
+            <strong>Inline</strong>
+
+            <ul>
+                <li><p>Ocupa apenas o espaço do conteúdo</p></li>
+                <li>Não quebra linha automaticamente</li>
+                <li>Não aceita width nem height</li>
+                <li>Aceita apenas padding horizontal e margin horizontal</li>
+                <li>Ex.: span, a, strong.</li>
+            </ul>
+
+            <strong>Block</strong>
+
+            <ul>
+                <li>Ocupa toda a largura disponível</li>
+                <li>Sempre quebra a linha</li>
+                <li>Aceita width, height, margin, padding em todas as direções</li>
+                <li>Ex.: div, p, h1</li>
+            </ul>
+
+            <h3>Elementos padrão Inline e Block</h3>
+
+            <ul>
+                <li><p><strong>Block</strong>: div, p, h1, ul, ol, section, article.</p></li>
+                <li><p><strong>Iniline</strong>: span, a, strong, em, img, label</p></li>
+            </ul>
         </div>
         <div>
             <h2 id="border">Margin, Padding e Border</h2>
@@ -58,6 +108,7 @@
 
             <img src="./img/img-box_sizing.png" alt="código demonstrando a utilização da propriedade box-sizing">
         </div>
+        </section>
     </main>
 </body>
 </html>
