@@ -1,5 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+:root {
+    --background-default: #171A21;
+    --gray: #617073;
+    --blue-gray: #7A93AC;
+    --baby-blue: #92BCEA;
+    --purple: #AFB3F7;
+}
+
+body {
+    background-color: var(--background-default);
+    color: white;
+}
+
+header {
+    padding: 10px 20px;
+    background-color: var(--gray);
+    border-bottom: 2px solid white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-block: 30px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+nav ul li a:hover {
+    background-color: var(--purple);
+    border-radius: 10px;
+    color: white;
+}
+
+.conteudos {
+    text-align: center;
+}
+
+.cascata {
+    h2 {
+        margin-top: 40px;
+        font-size: 30px;
+    }
+
+    p {
+        margin-top: 20px;
+    }
+
+    img {
+         margin-top: 20px;
+         width: 50%;
+    }
+}
+
+.especificidade {
+    h2 {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    ul {
+        width: 500px;      
+        margin: 0 auto;    
+        padding: 0;           
+      }
+      
+      ul li {
+        text-align: left;    
+      }
+
+      img {
+        margin-top: 20px;
+      }
 }
